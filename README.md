@@ -59,7 +59,8 @@ Objects:
           - send
           - receive
 
-Objects-inheritance
+
+Structure:
     Content:
       - text
         - sentence
@@ -82,7 +83,13 @@ Actions:
   - update
 
 Sentence:
-  if I Receive Message then Send Message and Create Content text: Thank You
+  - if I Receive Message then Send Message and Create Content text sentence: Thank You
+    - Receive Message
+    - Send Message
+    - Create Content
+        - text:
+            - sentence: Thank You
+
 ```
 
 
