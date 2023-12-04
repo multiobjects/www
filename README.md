@@ -38,29 +38,31 @@ Components:
       OBJECT: Sentence      # object
 
 Objects:
-    Connection:  
-        ACTION:
-          - connect
-          - disconnect        
-    Provider:  
-        ACTION:
-          - online
-          - offline        
-    Correspondent:
-        OBJECT: Content
-        ACTION:
-          - create
-          - read
-          - delete
-          - update
-    Communicants:
-        OBJECT: Message
-        ACTION:
-          - send
-          - receive
+    Network:          
+      - connect
+      - disconnect        
+
+    Provider:          
+      - online
+      - offline        
+    
+    Content:
+      - create
+      - read
+      - delete
+      - update
+    
+    Message:        
+      - send
+      - receive
 
 
 Structure:
+    Communicants:
+        - Message
+    Correspondent:
+        - Content
+
     Content:
       - text
         - sentence
