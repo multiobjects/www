@@ -30,8 +30,8 @@ streamowanie danych pomiędzy obiektami
 {catalog}
 ```
 ExchangeMessage(Message):
-    PrintContentOnScreen(Content)
-        ReadContentFromMessage(Message)
+    PrintOnScreen(Content)
+        ReadContent(Message)
         ReceiveMessage(Message)
         SendMessage(Message)
 ```
