@@ -31,13 +31,19 @@ streamowanie danych pomiędzy obiektami
 ```
 ExchangeMessage(Message):
     PrintOnScreen(Content)
-        ReadContent(Message)
+        ReadContentFromMessage(Message)
         ReceiveMessage(Message)
         SendMessage(Message)
 ```
         
-        
-        
+Zamiana zdania na funkcje
+
+
+```python
+# Print Content
+def PrintContent(Content):
+
+```                
         
 
 rekurencja od ostatniego do pierwszego w zdaniu
@@ -90,6 +96,12 @@ Components:
       ROLE: Reader
       ACTION: Read         # verb/object
       OBJECT: Content      # object
+    Convert Message To Content:    
+      ROLE: Converter
+      ACTION: Convert      # verb/object
+      OBJECTS:
+        IN: Message        # object
+        OUT: Content       # object
     Create Sentence:        # object interface
       ROLE: Creator
       ACTION: Create       # verb/object
