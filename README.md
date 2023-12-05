@@ -9,6 +9,7 @@
 + [identity](http://identity.multiobjects.com)
 
 
+
 ## catalog of components
 component = action + object
 ```bash
@@ -21,6 +22,25 @@ http://{catalog}.multiobjects.com/{component}.{extension}
 - załączenie do klasy multiobjects(catalog_url)
 - uruchomienie zadania multiobjects.sentence(sentence_yaml)
 - uruchomienie zadania multiobjects.deploy(server)
+
+zasada działania jak w apiDSL tylko z użyciem obiektów
+streamowanie danych pomiędzy obiektami 
+
+
+{catalog}
+```
+ExchangeMessage(Message):
+    PrintContentOnScreen(Content)
+        ReadContentFromMessage(Message)
+        ReceiveMessage(Message)
+        SendMessage(Message)
+```
+        
+        
+        
+        
+
+rekurencja od ostatniego do pierwszego w zdaniu
 
 
 ## Server
