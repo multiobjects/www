@@ -10,10 +10,24 @@
 
 
 
-## catalog of components
+zbierac dane z różnych API zamieniać na CSV i czytać za pomocą SQL query - plainQuery, by móc np. czytać hurtowo moje repozytoria i poprawiać kod, opis w newralgicznych miejscach, aktualizować np. nieaktualne linki
+
+do wykonywania/zapisywania danych trzeba by stworzyć view jako zbiorcze parametryzowane zadania dla wielu róznych API
+
+a sam SQL można potem zastąpić warstwą text to sql i w ten sposób uzyskać łatwy dostęp do danych za pseudo czata - [edi.chat]
+
++ wystarczy CSV + adapter/driver
++ CSV można generować z bash-a/python-a
+
+
+
+
+## Catalog of components
+
 component = action + object
 ```bash
-http://{catalog}.multiobjects.com/{component}.{extension}
+POST http://catalog.multiobjects.com/{component}.{extension}
+GET http://sentence.multiobjects.com/{sentence}
 ```
 
 ## Deployment
