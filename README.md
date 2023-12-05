@@ -45,7 +45,14 @@ katalog sklada sie z nazw folderów w ktorych sa pliki: dokumentacji, kodu w roz
 
 pliki luzno w projekcie folderu:
 
-language:
+
+### Actions
+
+### Objects
+
+### Components
+
+### language:
 - yaml
 - python
 - markdown
