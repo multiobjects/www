@@ -19,16 +19,37 @@ a sam SQL można potem zastąpić warstwą text to sql i w ten sposób uzyskać 
 + wystarczy CSV + adapter/driver
 + CSV można generować z bash-a/python-a
 
+## TODO:
 
+
++ catalog z lista przykładowych funkcji
+Funkcje:
++ plik python z listą przykładowych nazw komponentów w komentarzach
++ generator kodu na podstawie komentarzy
+Zdania:
++ plik python z listą zdań w komentarzach
++ generator kodu na podstawie zdań
++ rozpoznawanie gramatyki i zamiana w jednym ciągu z jednego typy danych na drugi
++ QUEUE - array
 
 
 ## Catalog of components
 
 component = action + object
 ```bash
-POST http://catalog.multiobjects.com/{component}.{extension}
+POST http://catalog.multiobjects.com/{component}.{language}
 GET http://sentence.multiobjects.com/{sentence}
 ```
+
+katalog sklada sie z nazw folderów w ktorych sa pliki: dokumentacji, kodu w roznych jezykach
+
+pliki luzno w projekcie folderu:
+
+language:
+- yaml
+- python
+- markdown
+- bash
 
 ### Generowanie projektu z kodem w folderze
 statyczy zbiór + JS aplikacja z zamianą nazw funkcji bez spacji
