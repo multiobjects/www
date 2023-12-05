@@ -40,8 +40,8 @@ Network -> Logic -> Component
 Paragraph -> Sentence -> Part
 ```
 
-- A paragraph is a **network**
-- A sentence is a **logic**
+- A paragraph is a public **network**
+- A sentence is a private **network**
 - A part of a sentence is a **component**
 
 
