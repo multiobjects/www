@@ -39,19 +39,27 @@ statyczy zbiór + JS aplikacja z zamianą nazw funkcji bez spacji
 + zwrocenie danych w oczekiwanym formacie
  
 ### Generowanie pliku kodu
-generowanie z komentarzy
-```python + markdown
-# [import](http://sentence.multiobjects.com/{sentence})
+generowanie z komentarzy python + markdown
 
+```python
+# catalogi:
+# [import](http://sentence.multiobjects.com/{sentence})
+# [import](http://catalog.multigit.com/{component})
+
+logika FROM-TO: FROM: WriteContent TO: Print Content On Screen
+
+# Sentence: WriteContent ....
 
 # WriteContent
 ## ConvertContentToMessage
 ## SendMessage
 ### SelectReceiver
-### SelectNetwork
+### ConnectToNetwork
+
+# Sentence: Print Content On Screen ....
 
 # Print Content On Screen
-## SelectNetwork
+## ConnectToNetwork
 ## ReceiveMessage
 ## ReadMessage
 ## ConvertMessageToContent
