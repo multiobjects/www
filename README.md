@@ -36,7 +36,7 @@ Zdania:
 ## Concept:
 
 ```bash 
-Network -> Logic -> Component
+Public Network -> Private Network -> Component
 Paragraph -> Sentence -> Part
 ```
 
