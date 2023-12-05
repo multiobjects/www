@@ -35,8 +35,8 @@ Zdania:
 
 ## Concept:
  
-Network -> Logic -> Component
-Paragraph -> Sentence -> Part
+### Network -> Logic -> Component
+### Paragraph -> Sentence -> Part
 
 - Paragraph is a network
 - Sentence is a logic
