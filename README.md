@@ -30,6 +30,7 @@ POST http://catalog.multiobjects.com/{component}.{extension}
 GET http://sentence.multiobjects.com/{sentence}
 ```
 
+### Generowanie projektu z kodem w folderze
 statyczy zbiór + JS aplikacja z zamianą nazw funkcji bez spacji
 + wybór maszyny na ktorej bedzie uruchamiana aplikacja, testowo docker
 + obieranie pliku funkcji lokalnie do folderu
@@ -37,7 +38,29 @@ statyczy zbiór + JS aplikacja z zamianą nazw funkcji bez spacji
 + uruchomienie wedle kolejnosci
 + zwrocenie danych w oczekiwanym formacie
  
+### Generowanie pliku kodu
+generowanie z komentarzy
+```python + markdown
+# [import](http://sentence.multiobjects.com/{sentence})
 
+
+# WriteContent
+## ConvertContentToMessage
+## SendMessage
+### SelectReceiver
+### SelectNetwork
+
+# Print Content On Screen
+## SelectNetwork
+## ReceiveMessage
+## ReadMessage
+## ConvertMessageToContent
+## PrintContentOnScreen
+
+
+
+
+```
 
 
 ## Deployment
