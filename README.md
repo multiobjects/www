@@ -30,6 +30,16 @@ POST http://catalog.multiobjects.com/{component}.{extension}
 GET http://sentence.multiobjects.com/{sentence}
 ```
 
+statyczy zbiór + JS aplikacja z zamianą nazw funkcji bez spacji
++ wybór maszyny na ktorej bedzie uruchamiana aplikacja, testowo docker
++ obieranie pliku funkcji lokalnie do folderu
++ import wszystkich funkcji do glownego programu
++ uruchomienie wedle kolejnosci
++ zwrocenie danych w oczekiwanym formacie
+ 
+
+
+
 ## Deployment
 
 - stworzenie pliku yaml ze zdaniem
