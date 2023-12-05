@@ -9,12 +9,51 @@
 + [identity](http://identity.multiobjects.com)
 
 
+## catalog of components
+component = action + object
+```bash
+http://{catalog}.multiobjects.com/{component}.{extension}
+```
+
+## Deployment
+
+- stworzenie pliku yaml ze zdaniem
+- załączenie do klasy multiobjects(catalog_url)
+- uruchomienie zadania multiobjects.sentence(sentence_yaml)
+- uruchomienie zadania multiobjects.deploy(server)
+
+
+## Server
+
+```yaml
+Server:
+    pass:
+    username:
+
+```
+
+## Sentence
+
+```yaml
+Sentence:
+  - if I Receive Message then Send Message and Create Content text sentence: Thank You
+    - Receive Message
+    - Send Message
+    - Create Content
+        - text:
+            - sentence: Thank You
+```
+
+
+        
+## Catalog
+
 ```yaml
 Components:  
     "Exchange Message":      # goal
       ROLE: Provider
       ACTION: Exchange     # verb/object
-      OBJECT: Message      # object  
+      OBJECT: Message      # object
     Send Message:          # goal
       ROLE: Sender
       ACTION: Send         # verb/object
@@ -83,18 +122,10 @@ Actions:
   - delete
   - update
 
-Sentence:
-  - if I Receive Message then Send Message and Create Content text sentence: Thank You
-    - Receive Message
-    - Send Message
-    - Create Content
-        - text:
-            - sentence: Thank You
-
 ```
 
 
-#### 2. Relations
+### Relations
 
 ```yml
 Exchange Message:  
@@ -108,8 +139,6 @@ Exchange Message:
 
 ### Roles
 
-#### 1. Relations
-
 ```yml
 TeleCommunication:
   Provider:
@@ -120,7 +149,7 @@ TeleCommunication:
 ```
 
 
-#### 2. Groups
+### Groups
 
 ```yml
 Communicants:
@@ -133,7 +162,7 @@ Correspondent:
 ```
 
 
-#### 3. Layers
+### Layers
 
 
 ```yml
