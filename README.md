@@ -33,13 +33,25 @@ Zdania:
 + QUEUE - array
 
 
+## Concept:
+ 
+Network -> Logic -> Component
+Paragraph -> Sentence -> Part
+
+- Paragraph is a network
+- Sentence is a logic
+- Part of sentence is a Component
+
+
+
 ## Catalog of components
 
 + [multiobjects/catalog: catalog.multiobjects.com](https://github.com/multiobjects/catalog)
 
 component = action + object
 ```bash
-POST http://catalog.multiobjects.com/{component}.{language}
+POST http://catalog.multiobjects.com/component/{component}.{language}
+POST http://catalog.multiobjects.com/object/{component}.{language}
 GET http://sentence.multiobjects.com/{sentence}
 ```
 
@@ -96,10 +108,7 @@ logika FROM-TO: FROM: WriteContent TO: Print Content On Screen
 ## PrintContentOnScreen
 
 
-
-
 ```
-
 
 ## Deployment
 
