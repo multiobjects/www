@@ -22,11 +22,19 @@ a sam SQL można potem zastąpić warstwą text to sql i w ten sposób uzyskać 
 ## TODO:
 
 
-+ catalog z lista przykładowych funkcji
-Funkcje:
++ catalog z lista przykładowych funkcji i obiektów
+ + GET http://catalog.multiobjects.com/component/{name}.{language}
+ + GET http://catalog.multiobjects.com/object/{name}.{language}
+  
+### Funkcje:
 + plik python z listą przykładowych nazw komponentów w komentarzach
 + generator kodu na podstawie komentarzy
-Zdania:
+  
+### Zdania:
++ zdanie
++ pętla ładowania ze zdania
+ + rozbijanie na wyrażenia
+ + pobieranie pliku yaml i ładowanie obiektów IN -> OUT
 + plik python z listą zdań w komentarzach
 + generator kodu na podstawie zdań
 + rozpoznawanie gramatyki i zamiana w jednym ciągu z jednego typy danych na drugi
