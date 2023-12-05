@@ -40,9 +40,10 @@ Network -> Logic -> Component
 Paragraph -> Sentence -> Part
 ```
 
-- Paragraph is a network
-- Sentence is a logic
-- Part of sentence is a Component
+- A paragraph is a **network**
+- A sentence is a **logic**
+- A part of a sentence is a **component**
+
 
 
 
