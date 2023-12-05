@@ -33,8 +33,13 @@ a sam SQL można potem zastąpić warstwą text to sql i w ten sposób uzyskać 
 ### Zdania:
 + zdanie
 + pętla ładowania ze zdania
- + rozbijanie na wyrażenia
- + pobieranie pliku yaml i ładowanie obiektów IN -> OUT
+  + rozbijanie na wyrażenia
+  + pobieranie pliku yaml i ładowanie obiektów IN -> OUT
+  + uruchamianie i zapisywanie do kolejki QUEUE
+  + podawanie obiektu na wyjściu i wyjściu
+  + skrypt python dla komend uruchamianych w konsoli z przykłądowymi zdaniami
+  + testy IN/OUT
+     
 + plik python z listą zdań w komentarzach
 + generator kodu na podstawie zdań
 + rozpoznawanie gramatyki i zamiana w jednym ciągu z jednego typy danych na drugi
